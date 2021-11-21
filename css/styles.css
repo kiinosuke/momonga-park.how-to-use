@@ -1,0 +1,198 @@
+@charset "utf-8";
+html {
+    overflow: auto;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+}
+
+/* header */
+header {
+    display: flex;
+    background-color: #e6ffe9;
+}
+
+.site-title {
+    float: left;
+}
+
+.site-title h1 {
+    padding-left: 20px;
+}
+
+/* sp-menu */
+.hidden {
+    display: none;
+}
+
+#menu img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+#mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 100px;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+
+#modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;    
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+
+#close img{
+   float: right;
+}
+
+#modal ul{
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right: 50px;
+}
+
+#modal li {
+    padding-bottom: 32px;   
+}
+
+#modal a{
+    color: #fff;
+    opacity: 1;
+}
+
+/* pc-menu */
+.pc-menu {
+    display: none;
+}
+
+/* main */
+.container {
+    margin: 0 5vw;
+}
+
+section h2{
+    padding-top: 40px;
+}
+
+.notes ol {
+    border: 1px solid;
+    margin: 5px 5px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.notes li {
+    margin-bottom: 16px;
+}
+#free-service ul{
+    font-size: 25px;
+}
+#price {
+    margin-left: 20px;
+}
+#price dl {
+    font-size: 20px;
+}
+#price dd {
+  font-size: 30px;
+}
+/* footer */
+footer {
+    float: right;
+    opacity: 0.8;
+    margin-top: 100px;
+}
+
+@media (min-width: 767px){
+    body {
+        text-align: center;
+        margin: 0;
+    }
+    
+    /* header */
+    
+    header {
+        justify-content: space-evenly;
+    }
+    
+    .site-title h1 {
+        font-size: 40px;
+    }
+    /* sp-menu */
+    .sp-menu {  
+        display: none;
+    }
+    
+        /* pc-menu */
+    .pc-menu{
+        display: flex;
+    }
+    
+    .pc-menu ul {  
+        display: flex;
+        list-style: none;
+        font-size: 25px;
+        float: right;
+    }
+    
+    .pc-menu li {
+        border-right: 1px solid;
+        padding: 10px 20px;
+    }
+    
+    .pc-menu a {
+        text-decoration:none;
+    }
+
+    /* main */
+    .notes ol {
+        padding: 0 30px;
+        padding-right: 30px;
+    }
+    .notes li{
+        padding: 20px 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .service {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    #free-service {
+        float: left;
+    }
+
+    
+    #free-service ul {
+      
+    }
+
+    #free-service li {
+      
+        text-align: left;
+    }
+    #paid-service {
+        float: left;
+    }
+}
